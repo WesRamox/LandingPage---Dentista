@@ -1,0 +1,106 @@
+@media only screen and (min-width: 375px) and (max-width: 720px) {
+    .home {
+        flex-direction: column-reverse;
+        padding-top: 90px;
+        min-height: 650px;
+    }
+
+    .primaryText {
+        font-size: 3rem;
+        min-width: 350px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .secondaryText {
+        margin: 0;
+        font-size: 1.2em;
+        text-align: center;
+        width: 250px;
+    }
+
+    .boxLeft {
+        justify-content: center;
+        width: 370px;
+        align-items: center;
+    }
+
+    .texts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .boxRight img {
+        width: 150px;
+    }
+
+    .navItems li {
+        display: none;
+    }
+
+    .especialidades {
+        height: 500px;
+    }
+
+    .especialidadesItems {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 400px;
+        height: 300px;
+        white-space:nowrap;
+    }
+
+    .odonto {
+        margin: 2px;
+        max-height: 150px;
+        cursor: pointer;
+        display:inline-block;
+        vertical-align:top;
+    }
+
+    .textEspecial h2 {
+        text-align: center;
+    }
+
+    .textEspecial p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .agendamentoForm {
+        min-height: 800px;
+        min-width: 400px;
+    }
+
+    .agendamento {
+        height: auto;
+        padding-top: 30px;
+    }
+
+    .formLeft, .formRight {
+        width: 80%;
+    }
+
+    .boxForm {
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .confirmeBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    .confirmarAgendamento {
+        width: 50%;
+    }
+    * {
+        /* border: solid red 1px; */
+    }
+}

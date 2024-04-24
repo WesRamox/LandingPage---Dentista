@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Sorriso | Início</title>
+    <link rel="stylesheet" href="./public/styles/main.css">
+    <link rel="stylesheet" href="./public/styles/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <header class="navbar">
+            <img class="navLogo" src="./public/images/logo.png" alt="Logo da Clinica Dentalis">
+            <ul class="navItems">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+                <li><a href="#aboutUs">Sobre nós</a></li>
+            </ul>
+            <div class="boxContato">
+                <a href="#" class="btnContato">Contato</a>
+            </div>
+        </header>
+        <section class="home" id="inicio">
+            <div class="boxLeft">
+                <div class="texts">
+                    <h1 class="primaryText">Bem-vindo à <span class="title">Clínica Sorriso</span></h1>
+                    <p class="secondaryText">Cuidando do Seu Sorriso com Excelência.</p>
+                </div>
+            </div>
+            <div class="boxRight">
+                <img class="dentistImage" src="./public/images/dentist.png" alt="Dentista segurando um dente">
+            </div>
+        </section>
+        <div class="arrow">
+            <a href="#especialidades" class="arrowDown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="down-arrow">
+                    <g data-name="Layer 2"><g data-name="arrowhead-down"><path d="M17.37 12.39 12 16.71l-5.36-4.48a1 1 0 1 0-1.28 1.54l6 5a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41 1 1 0 0 0-1.41-.14z"></path><path d="M11.36 11.77a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41 1 1 0 0 0-1.41-.15L12 9.71 6.64 5.23a1 1 0 0 0-1.28 1.54z"></path></g></g></svg>
+            </a>
+        </div>
+        <section class="especialidades" id="especialidades">
+            <div class="textEspecial">
+                <h2>Nossas Especialidades</h2>
+                <p>Conheça nossas especialidades e veja qual a sua necessidade.</p>
+            </div>
+            <div class="especialidadesItems">
+                <div class="odonto">
+                    <img src="./public/images/odonto.png" alt="">
+                    <p>Odontologia</p>
+                </div>
+                <div class="odonto">
+                    <img src="./public/images/ortodontia.png" alt="">
+                    <p>Ortodontia</p>
+                </div>
+                <div class="odonto">
+                    <img src="./public/images/ortop.png" alt="">
+                    <p>Ortop. Facial</p>
+                </div>
+                <div class="odonto implante">
+                    <img src="./public/images/implante.png" alt="">
+                    <p>Implantodontia</p>
+                </div>
+                <div class="odonto">
+                    <img src="./public/images/endodontia.png" alt="">
+                    <p>Endodontia</p>
+                </div>
+                <div class="odonto">
+                    <img src="./public/images/estetica.png" alt="">
+                    <p>Estética Bucal</p>
+                </div>
+            </div>
+        </section>
+        <section class="agendamento" id="agendamento">
+            <div class="bg"></div>
+            <h1 class="textAgenda">Agendamento Online</h1>
+            <div class="agendamentoForm">
+                <form action="">
+                    <h2>Informe seus dados:</h2>
+                    <div class="boxForm">
+                        <div class="formLeft">
+                            <div class="boxInput">
+                                <label for="nome">Nome Completo:</label>
+                                <input name="nome" type="text" placeholder="Ex: Wesley Ramos" required>
+                            </div>
+                            <div class="boxInput">
+                                <label for="cpf">CPF:</label>
+                                <input name="cpf" type="number" placeholder="123.456.789-00" required>
+                            </div>
+                            <div class="boxInput">
+                                <label for="email">Email:</label>
+                                <input name="email" type="email" placeholder="user@gmail.com" required>
+                            </div>
+                            <div class="boxInput">
+                                <label for="celular">Celular:</label>
+                                <input name="celular" type="number" placeholder="(11)91234-5678" required>
+                            </div>
+                            <div class="boxInput">
+                                <label for="especialidades">Especialidade:</label>
+                                <select name="especialidades" required>
+                                    <option value="">Odontologia</option>
+                                    <option value="">Ortodontia</option>
+                                    <option value="">Ortop. Facial</option>
+                                    <option value="">Implantodontia</option>
+                                    <option value="">Endodontia</option>
+                                    <option value="">Estética Bucal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="formRight">
+                            <div class="endereco">
+                                <div class="boxInput">
+                                    <label for="endereco">Endereço:</label>
+                                    <input name="endereco" type="text" placeholder="Rua developer's" required>
+                                </div>
+                                <div class="boxInput">
+                                    <label for="nEndereco">Número de Endereço:</label>
+                                    <input name="nEndereco" type="number" placeholder="69" required>
+                                </div>
+                                <div class="boxInput">
+                                    <label for="cep">CEP:</label>
+                                    <input name="cep" type="number" placeholder="00000-000" required>
+                                </div>
+                                <div class="boxInput">
+                                    <label for="estado">Selecione um estado:</label>
+                                    <select name="estado" id="estados" name="estados" required>
+                                        <option value="AC">Acre</option>
+                                        <option value="AL">Alagoas</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PR">Paraná</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="SE">Sergipe</option>
+                                        <option value="TO">Tocantins</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="boxInput">
+                                <label for="unidades_atendimento" for="unidades_atendimento">Selecione uma unidade:</lab>
+                                    <select id="unidades_atendimento" name="unidades_atendimento" required>
+                                        <option value="SP">Unidade São Paulo - São Paulo</option>
+                                        <option value="RJ">Unidade Rio de Janeiro - Rio de Janeiro</option>
+                                        <option value="MG">Unidade Minas Gerais - Belo Horizonte</option>
+                                        <option value="RS">Unidade Rio Grande do Sul - Porto Alegre</option>
+                                        <option value="PR">Unidade Paraná - Curitiba</option>
+                                        <option value="BA">Unidade Bahia - Salvador</option>
+                                        <option value="PE">Unidade Pernambuco - Recife</option>
+                                        <option value="CE">Unidade Ceará - Fortaleza</option>
+                                        <option value="DF">Unidade Distrito Federal - Brasília</option>
+                                        <option value="ES">Unidade Espírito Santo - Vitória</option>
+                                        <option value="GO">Unidade Goiás - Goiânia</option>
+                                        <option value="MA">Unidade Maranhão - São Luís</option>
+                                        <option value="PA">Unidade Pará - Belém</option>
+                                        <option value="PB">Unidade Paraíba - João Pessoa</option>
+                                        <option value="PI">Unidade Piauí - Teresina</option>
+                                        <option value="RN">Unidade Rio Grande do Norte - Natal</option>
+                                        <option value="SC">Unidade Santa Catarina - Florianópolis</option>
+                                        <option value="SE">Unidade Sergipe - Aracaju</option>
+                                        <option value="TO">Unidade Tocantins - Palmas</option>
+                                        <option value="AC">Unidade Acre - Rio Branco</option>
+                                        <option value="AL">Unidade Alagoas - Maceió</option>
+                                        <option value="AP">Unidade Amapá - Macapá</option>
+                                        <option value="AM">Unidade Amazonas - Manaus</option>
+                                        <option value="RR">Unidade Roraima - Boa Vista</option>
+                                        <option value="RO">Unidade Rondônia - Porto Velho</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirmeBox">
+                        <button class="confirmarAgendamento">Confirmar agendamento</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

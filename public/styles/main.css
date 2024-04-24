@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;600&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid red 1px; */
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    appearance: textfield; /* WebKit */
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+textarea, input, select {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.container {
+    background-color: rgb(235, 249, 255);
+}
+
+/* ------------ HEADER ------------ */
+
+.navbar {
+    display: flex;
+    height: 90px;
+    position: absolute;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e2efff;
+}
+
+.navLogo {
+    width: 80px;
+    height: 80px;
+}
+
+.navItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 30%;
+}
+
+.navItems li a {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+  
+.navItems li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5d71b3;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+  
+.navItems li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navItems li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #5d71b3;
+}
+
+.navItems li a:hover {
+    color: #133c84;
+}
+
+.btnContato {
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #5d71b3;
+    transition: all 0.5s ease-out;
+}
+
+.btnContato:hover {
+    background-color: #485991;
+    transition: all 0.5s ease;
+}
+
+.boxContato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------ FIM HEADER ------------ */
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    min-height: 650px;
+    background-color: rgb(235, 249, 255);
+    z-index: 999;
+}
+
+.primaryText {
+    font-weight: 700;
+    font-size: 4em;
+    max-width: 500px;
+    min-width: 400px;
+    line-height: 1.2;
+    margin-left: 50px;
+}
+
+.title {
+    color: #5d71b3;
+}
+
+.secondaryText {
+    margin-left: 50px;
+    font-size: 1.3em;
+    color: rgb(96, 96, 96);
+}
+
+@keyframes jump_smooth {
+	0%, 100%{
+		transform:translateY(0)
+	}
+	50%{
+		transform:translateY(-30px)
+	}
+}
+
+@keyframes arrow_down{
+	0%, 100%{
+		transform:translateY(0);
+        opacity: 0.5;
+	}
+	50%{
+        transform:translateY(-10px);
+        opacity: 0.1;
+	}
+}
+
+
+.dentistImage {
+    max-width: 550px;
+    max-height: 650px;
+    animation: jump_smooth 5s ease-in-out infinite;
+}
+
+.boxLeft {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+}
+
+.arrowDown {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    animation: arrow_down 2s ease-in infinite;
+}
+
+.arrow {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+/* ---------------- (Especialidades - PAGE) ---------------- */
+
+.especialidades {
+    height: 450px;
+}
+
+.especialidades {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px;
+    gap: 50px;
+}
+
+.textEspecial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.textEspecial h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.textEspecial p {
+    font-size: 18px;
+}
+
+.odonto img {
+    width: 140px;
+}
+
+.implante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.odonto p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.especialidadesItems {
+    display: flex;
+    gap: 40px;
+}
+
+
+
+/* ---------------- (Especialidades - PAGE) FIM ---------------- */
+
+.textAbout {
+    max-width: 900px;
+    min-width: 200px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.687);
+    border-radius: 10px;
+    padding: 80px;
+}
+
+.titleAbout {
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(99, 129, 249);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.paragraphAbout {
+    color: rgb(230, 230, 230);
+    font-size: 20px;
+}
+
+/* ---------------- Agendamento - Page --------------- */
+
+.agendamento {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    gap: 50px;
+    min-height: 750px;
+}
+
+.agendamento .bg {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-color: #485991;
+    z-index: -1;
+}
+
+.textAgenda {
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.agendamentoForm {
+    min-width: 600px;
+    max-width: 700px;
+    min-height: 500px;
+    max-height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.agendamentoForm form {
+    padding: 30px;
+    font-size: 18px;
+}
+
+.boxForm {
+    display: flex;
+    gap: 50px;
+}
+
+.agendamentoForm form h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    color: rgb(95, 115, 188);
+}
+
+.boxInput {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.boxInput input, .boxInput select {
+    height: 30px;
+    font-size: 15px;
+    border-bottom: 2px solid;
+    transition: all 0.5s;
+    background: transparent;
+}
+
+.boxInput select {
+    height: 30px;
+    padding: 2px;
+    font-size: 15px;
+    width: 100%;
+    border-bottom: 2px solid;
+    transition: all 0.5s;
+}
+
+.boxInput input:focus, .boxInput select:focus {
+    border-bottom: 2px solid #5d71b3;
+    transition: all 0.5s;
+}
+
+.formLeft, .formRight {
+    width: 50%;
+}
+
+.confirmeBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmarAgendamento {
+    padding: 12px 18px;
+    font-size: 20px;
+    background-color: #58689c;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    transition: all 0.5s ease;  
+}
+
+.confirmarAgendamento:hover {
+    background-color: #485991;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.confirmarAgendamento:active {
+    background-color: rgb(131, 134, 201);
+}
+
+/* ---------------- Agendamento - Page FIM --------------- */
