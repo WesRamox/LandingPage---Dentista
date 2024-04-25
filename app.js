@@ -9,7 +9,6 @@ hamburgerItem.addEventListener('click', () => {
     } else {
         listItem.classList.add('actived')
     }
-    console.log("Oi")
 })
 
 console.log(hamburgerItem)
