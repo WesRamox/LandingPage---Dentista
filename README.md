@@ -11,7 +11,7 @@ Ver
 ### Tecnologias utilizadas
 
 HTML, CSS e JAVASCRIPT
-## Autores
+## Autor
 
 - [@WesRamox](https://www.github.com/wesramox)
 
