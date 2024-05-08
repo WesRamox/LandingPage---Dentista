@@ -1,16 +1,14 @@
 
-## Landing Page para uma Clínica Odontológica
-
-Landing Page para uma Clínica Odontológica
-
+## Landing page para uma Clínica Odontológica
 
 ![Aplicativo](https://snipboard.io/c7GauL.jpg)
 
-Ver
+- [Veja aqui](https://wesramox.github.io/LandingPage-Dentista/)
 
 ### Tecnologias utilizadas
 
 HTML, CSS e JAVASCRIPT
+
 ## Autor
 
 - [@WesRamox](https://www.github.com/wesramox)
